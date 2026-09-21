@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · ChangeHunt</title>
+<meta name="description" content="ChangeHunt privacy policy.">
+<link rel="canonical" href="https://www.changehunt.app/privacy.html">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#14503C">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ChangeHunt">
+<meta property="og:title" content="Privacy Policy · ChangeHunt">
+<meta property="og:description" content="ChangeHunt privacy policy.">
+<meta property="og:url" content="https://www.changehunt.app/privacy.html">
+<meta property="og:image" content="https://www.changehunt.app/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="bar">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" alt="" width="28" height="28">ChangeHunt</a>
+  <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main>
+<h1>ChangeHunt Privacy Policy</h1>
+<p><em>Last updated: 21 September 2026</em></p>
+<h2>The short version</h2>
+<p>ChangeHunt has no accounts, no logins and no advertising identifiers. Photos of coins you scan are sent to our scan proxy to identify the coin and return an estimate, and the photo itself is not kept afterward. Your scan history stays on your phone.</p>
+<h2>What we handle</h2>
+<p><strong>Coin photos.</strong> When you scan a coin, the app sends the photo (front, and back if you provide it) to our scan proxy. The proxy passes it to an AI vision provider acting as our processor, which returns an identification — country, denomination, year and mint mark when legible — and the proxy looks up a value range from that identification. <strong>The photo itself is not retained after the request finishes.</strong> We cache the *result* — the identification, the value range and a fingerprint (hash) of the image — for 24 to 72 hours, so scanning the same coin again is instant. The fingerprint cannot be turned back into your photo.</p>
+<p><strong>On-device text recognition.</strong> Before a photo leaves your phone, the app runs on-device text recognition to read any visible date or mint mark. Those hints travel with the scan request as a starting point for the vision provider — never as a fact it is required to agree with.</p>
+<p><strong>A random per-install identifier.</strong> The app generates a random ID on first launch and sends it with each scan so we can apply the free daily scan limit and stop abuse. It is not an advertising identifier, is not shared with anyone, and is not linked to you. Deleting the app discards it.</p>
+<p><strong>A subscription token.</strong> If you subscribe, the app attaches a random, anonymous token (<code>appAccountToken</code>) to your purchase. We send it with scans so the right usage allowance applies. It does not identify you and we cannot use it to contact you.</p>
+<p><strong>Your scan history and thumbnails.</strong> Stored on your phone only. We never receive them. They are removed when you delete a scan, clear your history in Settings, or delete the app.</p>
+<h2>What we do not do</h2>
+<ul>
+<li>We do not create accounts or ask for your name, email or address.</li>
+<li>We do not use advertising identifiers, run ads, or track you across apps</li>
+</ul>
+<p>or websites.</p>
+<ul>
+<li>We do not sell or share personal data.</li>
+<li>We do not run any third-party analytics SDK. Diagnostic logging, if any,</li>
+</ul>
+<p>stays on the device.</p>
+<ul>
+<li>We do not keep your coin photos.</li>
+</ul>
+<h2>Who else is involved</h2>
+<ul>
+<li><strong>An AI vision provider</strong> receives the scanned photo, acting as our</li>
+</ul>
+<p>processor, to identify the coin. It processes the photo to return a result and does not use it to train models.</p>
+<ul>
+<li><strong>Apple</strong> handles all payments. We never see your payment details.</li>
+</ul>
+<h2>Children</h2>
+<p>ChangeHunt is not directed at children under 13 and we do not knowingly collect information from them.</p>
+<h2>Your choices</h2>
+<p>Because we hold no account and no personal data tied to you, there is nothing for us to look up, export or delete on request. To remove everything the app holds, clear your history in Settings or delete the app. You can revoke camera and photo library access at any time in iOS Settings; the app still works with photos you pick manually from your library.</p>
+<h2>Changes</h2>
+<p>If this policy changes materially we will update the date above and note it in the app&#x27;s release notes.</p>
+<h2>Contact</h2>
+<p>support@changehunt.app</p>
+</main>
+<footer>
+  <div class="footgrid">
+    <div>
+      <p class="wordmark-foot">ChangeHunt: Coin Identifier</p>
+      <p>Scan · ID · Value. A camera coin identifier with honest value ranges.</p>
+      <p>App Store (coming soon) · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    </div>
+    <div>
+      <p>ChangeHunt is not affiliated with, endorsed by, or sponsored by PCGS, NGC, the United States Mint, or any grading service. Their names appear only to describe the coins the app identifies or the sources it cites.</p>
+      <p class="disclaimer">Estimate only — not an appraisal. Actual sale prices vary.</p>
+      <p>&copy; 2026 David McCoy</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
