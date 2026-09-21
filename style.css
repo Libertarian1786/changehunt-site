@@ -44,10 +44,6 @@ main.wide { max-width: 1040px; }
   background: linear-gradient(135deg, #1B6A4F 0%, #14503C 48%, #0A2A20 100%);
   color: #fff; box-shadow: var(--shadow);
 }
-.hero::after {
-  content: "\1FA99"; position: absolute; top: 22px; right: 30px;
-  font-size: 32px; opacity: 0.9;
-}
 .hero.small { padding: 40px 20px; }
 .hero.small a { color: #E9A36B; }
 .appicon { border-radius: 22px; box-shadow: 0 10px 26px rgba(0,0,0,0.28); margin-bottom: 20px; }
