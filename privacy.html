@@ -28,24 +28,37 @@
 <h1>ChangeHunt Privacy Policy</h1>
 <p><em>Last updated: 21 September 2026</em></p>
 <h2>The short version</h2>
-<p>ChangeHunt has no accounts, no logins and no advertising identifiers. Photos of coins you scan are sent to our scan proxy to identify the coin and return an estimate, and the photo itself is not kept afterward. Your scan history stays on your phone.</p>
+<p>ChangeHunt has no accounts and no logins. Everyone gets 3 free scans a day; after that, free users unlock further scans by watching a short video ad from Google AdMob (see &quot;Ads&quot; below) — Premium removes ads and the daily cap entirely. Photos of coins you scan are sent to our scan proxy to identify the coin and return an estimate, and the photo itself is not kept afterward. Your scan history stays on your phone.</p>
 <h2>What we handle</h2>
 <p><strong>Coin photos.</strong> When you scan a coin, the app sends the photo (front, and back if you provide it) to our scan proxy. The proxy passes it to an AI vision provider acting as our processor, which returns an identification — country, denomination, year and mint mark when legible — and the proxy looks up a value range from that identification. <strong>The photo itself is not retained after the request finishes.</strong> We cache the <em>result</em> — the identification, the value range and a fingerprint (hash) of the image — for 24 to 72 hours, so scanning the same coin again is instant. The fingerprint cannot be turned back into your photo.</p>
 <p><strong>On-device text recognition.</strong> Before a photo leaves your phone, the app runs on-device text recognition to read any visible date or mint mark. Those hints travel with the scan request as a starting point for the vision provider — never as a fact it is required to agree with.</p>
 <p><strong>A random per-install identifier.</strong> The app generates a random ID on first launch and sends it with each scan so we can apply the free daily scan limit and stop abuse. It is not an advertising identifier, is not shared with anyone, and is not linked to you. Deleting the app discards it.</p>
 <p><strong>A subscription token.</strong> If you subscribe, the app attaches a random, anonymous token (<code>appAccountToken</code>) to your purchase. We send it with scans so the right usage allowance applies. It does not identify you and we cannot use it to contact you.</p>
 <p><strong>Your scan history and thumbnails.</strong> Stored on your phone only. We never receive them. They are removed when you delete a scan, clear your history in Settings, or delete the app.</p>
+<h2>Ads</h2>
+<p>The free tier shows rewarded video ads from <strong>Google AdMob</strong>. You get 3 free scans a day with no ad, ever. After those, each further scan that day is unlocked by choosing to watch one short rewarded ad to completion — you always have the option to stop instead and come back tomorrow, or go Premium. <strong>Premium shows no ads at all.</strong> No ad ever appears on the result card, the share card, or anywhere in Jar mode.</p>
+<p>When an ad is shown, Google&#x27;s AdMob SDK runs on your device to select and display it. Per Google&#x27;s own published disclosure for the AdMob iOS SDK (fetched 21 September 2026 from <code>https://developers.google.com/admob/ios/privacy/data-disclosure</code> — the specific &quot;app-privacy-details&quot; URL Apple&#x27;s nutrition-label guidance points to no longer resolves as of this date, so this is the current page Google publishes at the same path prefix), the SDK may collect:</p>
+<ul>
+<li>your IP address, which may be used to estimate your general location;</li>
+<li>non-user-related crash logs;</li>
+<li>performance data such as app launch time, hang rate, or energy usage;</li>
+<li>a device identifier, such as your device&#x27;s advertising identifier;</li>
+<li>advertising data, such as which ads you have seen; and</li>
+<li>other product interactions, such as app-launch taps and video-view interaction.</li>
+</ul>
+<p><strong>The tracking prompt.</strong> Before your first ad ever shown, iOS asks whether ChangeHunt can track you across apps and websites (App Tracking Transparency). This is the only reason the app ever shows that prompt, and it only affects which ads you see — the app works identically either way. If you decline or haven&#x27;t decided, ads are requested without personalization and your advertising identifier is not used for tracking. If you allow it, ads may be personalized using data other apps and sites share through Google&#x27;s advertising network.</p>
 <h2>What we do not do</h2>
 <ul>
 <li>We do not create accounts or ask for your name, email or address.</li>
-<li>We do not use advertising identifiers, run ads, or track you across apps or websites.</li>
 <li>We do not sell or share personal data.</li>
-<li>We do not run any third-party analytics SDK. Diagnostic logging, if any, stays on the device.</li>
+<li>We do not run any third-party analytics SDK of our own. Diagnostic logging, if any, stays on the device.</li>
 <li>We do not keep your coin photos.</li>
+<li>We do not run banner, interstitial or app-open ads, and we never show an ad before your first three scans of the day.</li>
 </ul>
 <h2>Who else is involved</h2>
 <ul>
 <li><strong>An AI vision provider</strong> receives the scanned photo, acting as our processor, to identify the coin. It processes the photo to return a result and does not use it to train models.</li>
+<li><strong>Google AdMob</strong> shows rewarded video ads to free users, as described above. It never receives your coin photos or scan results.</li>
 <li><strong>Apple</strong> handles all payments. We never see your payment details.</li>
 </ul>
 <h2>Children</h2>
